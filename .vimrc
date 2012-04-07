@@ -1,5 +1,5 @@
 syntax enable
-colorscheme elflord
+colorscheme evening
 
 filetype off
 set rtp+=~/.vim/bundle/vundle/
@@ -7,7 +7,8 @@ call vundle#rc()
 filetype plugin on
  
 Bundle 'nathanaelkane/vim-indent-guides'
-let g:indent_guides_enable_on_vim_startup=1 "vim立ち上げ時に自動的にvim-indent-guidesをオンにする
+autocmd FileType python IndentGuidesEnable
+"let g:indent_guides_enable_on_vim_startup=1 "vim立ち上げ時に自動的にvim-indent-guidesをオンにする
 let g:indent_guides_auto_colors = 0 "autoにするとよく見えなかったので自動的に色付けするのはストップ
 let g:indent_guides_color_change_percent = 10 "色の変化の幅（？）。パーセンテージらしい
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=black guibg=black ctermbg=1 "インデントの色
