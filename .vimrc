@@ -1,11 +1,31 @@
 syntax enable
-colorscheme evening
+set number
+set ruler
+colorscheme molokai
+
+function! VimColors()
+  highlight WhiteSpaceEOL ctermbg=red guibg=red
+  highlight ZenkakuSpace ctermbg=green guibg=green
+  highlight Tab ctermbg=blue guibg=blue
+endfunction
+
+if has('syntax')
+  augroup VimColors
+    autocmd!
+    autocmd VimEnter,WinEnter * match WhiteSpaceEOL /\s\+$/
+    autocmd VimEnter,WinEnter * 2match ZenkakuSpace /　/
+    autocmd VimEnter,WinEnter * 3match Tab /\t/
+  augroup END
+  call VimColors()
+endif
 
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 filetype plugin on
- 
+
+Bundle 'mattn/gist-vim'
+Bundle 'mattn/webapi-vim'
 Bundle 'nathanaelkane/vim-indent-guides'
 autocmd FileType python IndentGuidesEnable
 "let g:indent_guides_enable_on_vim_startup=1 "vim立ち上げ時に自動的にvim-indent-guidesをオンにする
@@ -19,7 +39,7 @@ autocmd FileType python setl autoindent
 autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 autocmd FileType python setl tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
-" Execute python script C-P 
+" Execute python script C-P
 function! s:ExecPy()
     exe "!" . &ft . " %"
 :endfunction
