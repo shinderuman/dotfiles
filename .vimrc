@@ -1,7 +1,7 @@
 syntax enable
 set number
 set ruler
-colorscheme molokai
+colorscheme darkblue
 
 function! VimColors()
   highlight WhiteSpaceEOL ctermbg=red guibg=red
