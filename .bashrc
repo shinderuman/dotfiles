@@ -8,5 +8,5 @@ export GISTY_DIR="$HOME/src/gists"
 
 # use zsh
 if [ -f /bin/zsh ]; then
-    exec /bin/zsh
+#    exec /bin/zsh
 fi
