@@ -19,15 +19,15 @@ if has('syntax')
   call VimColors()
 endif
 
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-filetype plugin on
+"filetype off
+"set rtp+=~/.vim/bundle/vundle/
+"call vundle#rc()
+"filetype plugin on
 
-Bundle 'mattn/gist-vim'
-Bundle 'mattn/webapi-vim'
-Bundle 'nathanaelkane/vim-indent-guides'
-autocmd FileType python IndentGuidesEnable
+"Bundle 'mattn/gist-vim'
+"Bundle 'mattn/webapi-vim'
+"Bundle 'nathanaelkane/vim-indent-guides'
+"autocmd FileType python IndentGuidesEnable
 "let g:indent_guides_enable_on_vim_startup=1 "vim立ち上げ時に自動的にvim-indent-guidesをオンにする
 let g:indent_guides_auto_colors = 0 "autoにするとよく見えなかったので自動的に色付けするのはストップ
 let g:indent_guides_color_change_percent = 10 "色の変化の幅（？）。パーセンテージらしい

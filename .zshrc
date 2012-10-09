@@ -23,3 +23,7 @@ case "$TERM" in
     PROMPT='%m:%c%# '
     ;;
 esac
+
+autoload bashcompinit
+bashcompinit
+source ~/.git-completion.sh
