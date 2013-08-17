@@ -34,8 +34,8 @@ NeoBundle 'mattn/gist-vim.git'
 NeoBundle 'mattn/webapi-vim.git'
 NeoBundle 'koron/nyancat-vim.git'
 NeoBundle 'mattn/habatobi-vim.git'
-"NeoBundle 'mattn/hahhah-vim.git'
-"NeoBundle 'mattn/vim-airline-hahhah.git'
+NeoBundle 'mattn/hahhah-vim.git'
+NeoBundle 'mattn/vim-airline-hahhah.git'
 NeoBundle 'mattn/multi-vim'
 filetype plugin on
 filetype indent on
