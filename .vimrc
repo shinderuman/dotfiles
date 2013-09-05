@@ -37,6 +37,16 @@ NeoBundle 'mattn/habatobi-vim.git'
 NeoBundle 'mattn/hahhah-vim.git'
 NeoBundle 'mattn/vim-airline-hahhah.git'
 NeoBundle 'mattn/multi-vim'
+NeoBundle 'mattn/ctrlp-hotentry'
+NeoBundle 'vim-scripts/TwitVim'
+NeoBundle 'mattn/ctrlp-google'
+NeoBundle 'mattn/vim-metarw-etcd'
+
+"go lang
+set rtp+=$GOROOT/misc/vim
+exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
+set completeopt=menu,preview
+
 filetype plugin on
 filetype indent on
 
@@ -106,4 +116,3 @@ set foldlevel=100 "Don't autofold anything
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
-
