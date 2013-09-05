@@ -30,5 +30,5 @@ source ~/.git-completion.sh
 
 #go lang
 export GOROOT=/usr/local/go
-export export GOPATH=/usr/local/_go
+export GOPATH=/usr/local/_go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
