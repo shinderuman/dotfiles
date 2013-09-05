@@ -41,6 +41,7 @@ NeoBundle 'mattn/ctrlp-hotentry'
 NeoBundle 'vim-scripts/TwitVim'
 NeoBundle 'mattn/ctrlp-google'
 NeoBundle 'mattn/vim-metarw-etcd'
+NeoBundle 'mattn/sonictemplate-vim'
 
 "go lang
 set rtp+=$GOROOT/misc/vim
