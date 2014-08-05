@@ -44,7 +44,7 @@ NeoBundle 'mattn/vim-metarw-etcd'
 NeoBundle 'mattn/sonictemplate-vim'
 
 "go lang
-set rtp+=$GOROOT/misc/vim
+set rtp+=$GOROOT/libexec/misc/vim
 exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
 set completeopt=menu,preview
 

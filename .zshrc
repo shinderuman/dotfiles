@@ -29,6 +29,6 @@ bashcompinit
 source ~/.git-completion.sh
 
 #go lang
-export GOROOT=/usr/local/go
-export GOPATH=/usr/local/_go
+export GOROOT=/usr/local/Cellar/go/1.2.2
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
