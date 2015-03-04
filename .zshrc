@@ -29,6 +29,9 @@ bashcompinit
 source ~/.git-completion.sh
 
 #go lang
-export GOROOT=/usr/local/Cellar/go/1.2.2
-export GOPATH=$HOME/go
+export GOROOT=/usr/local/opt/go/libexec
+export GOPATH=$HOME/gopath
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+alias vi=vim
+alias gobuildraspberry='GOOS=linux GOARCH=arm go build $1'
