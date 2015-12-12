@@ -27,28 +27,28 @@ if has('vim_starting')
 	set runtimepath+=~/.vim/bundle/neobundle.vim
 	call neobundle#begin(expand('~/.vim/bundle/'))
 	NeoBundleFetch 'Shougo/neobundle.vim'
+	" ここにインストールしたいプラグインのリストを書く
+	NeoBundle 'Shougo/unite.vim.git'
+	NeoBundle 'mattn/gist-vim.git'
+	NeoBundle 'mattn/webapi-vim.git'
+	NeoBundle 'koron/nyancat-vim.git'
+	NeoBundle 'mattn/habatobi-vim.git'
+	NeoBundle 'mattn/hahhah-vim.git'
+	NeoBundle 'mattn/vim-airline-hahhah.git'
+	NeoBundle 'mattn/multi-vim'
+	NeoBundle 'mattn/ctrlp-hotentry'
+	NeoBundle 'vim-scripts/TwitVim'
+	NeoBundle 'mattn/ctrlp-google'
+	NeoBundle 'mattn/vim-metarw-etcd'
+	NeoBundle 'mattn/sonictemplate-vim'
+	NeoBundle 'rbtnn/game_engine.vim'
+	NeoBundle 'rbtnn/pipe.vim'
+	NeoBundle 'rbtnn/puyo.vim'
+	NeoBundle 'rbtnn/mario.vim'
+	NeoBundle 'rbtnn/reverse.vim'
+
 	call neobundle#end()
 endif
-
-" ここにインストールしたいプラグインのリストを書く
-NeoBundle 'Shougo/unite.vim.git'
-NeoBundle 'mattn/gist-vim.git'
-NeoBundle 'mattn/webapi-vim.git'
-NeoBundle 'koron/nyancat-vim.git'
-NeoBundle 'mattn/habatobi-vim.git'
-NeoBundle 'mattn/hahhah-vim.git'
-NeoBundle 'mattn/vim-airline-hahhah.git'
-NeoBundle 'mattn/multi-vim'
-NeoBundle 'mattn/ctrlp-hotentry'
-NeoBundle 'vim-scripts/TwitVim'
-NeoBundle 'mattn/ctrlp-google'
-NeoBundle 'mattn/vim-metarw-etcd'
-NeoBundle 'mattn/sonictemplate-vim'
-NeoBundle 'rbtnn/game_engine.vim'
-NeoBundle 'rbtnn/pipe.vim'
-NeoBundle 'rbtnn/puyo.vim'
-NeoBundle 'rbtnn/mario.vim'
-NeoBundle 'rbtnn/reverse.vim'
 
 "go lang
 set rtp+=$GOROOT/libexec/misc/vim
