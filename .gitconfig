@@ -5,3 +5,5 @@
 	email = shinderuman@gmail.com
 [core]
 	pager = lv -c
+[github]
+	user = shinderuman
