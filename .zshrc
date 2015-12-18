@@ -34,7 +34,7 @@ export GOPATH=$HOME/gopath
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 alias vi=vim
-alias gobuildraspberry='GOOS=linux GOARCH=arm go build $1'
+alias gobuildraspberry='GOOS=linux GOARCH=arm GOARM=5 go build $1'
 
 # .ssh hostname補完
 function print_known_hosts () {
