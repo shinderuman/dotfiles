@@ -24,6 +24,7 @@ set nocompatible
 filetype off
 
 if has('vim_starting')
+	" curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh|sh
 	set runtimepath+=~/.vim/bundle/neobundle.vim
 	call neobundle#begin(expand('~/.vim/bundle/'))
 	NeoBundleFetch 'Shougo/neobundle.vim'
