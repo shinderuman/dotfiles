@@ -35,6 +35,8 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 alias vi=vim
 alias gobuildraspberry='GOOS=linux GOARCH=arm GOARM=5 go build $1'
+alias gobuildubuntu='GOOS=linux GOARCH=386 go build $1'
+alias mosh_ec2_ubuntu='MOSH_KEY=fC8apxK6g+5/8KTUSNkgZA mosh -p 65535 ec2ubuntu'
 
 # .ssh hostname補完
 function print_known_hosts () {
