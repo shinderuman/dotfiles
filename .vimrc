@@ -19,34 +19,52 @@ if has('syntax')
   call VimColors()
 endif
 
-"==================== neobundle
-set nocompatible
-filetype off
-
-if has('vim_starting')
-	" curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh|sh
-	set runtimepath+=~/.vim/bundle/neobundle.vim
-	call neobundle#begin(expand('~/.vim/bundle/'))
-	NeoBundleFetch 'Shougo/neobundle.vim'
-	" ここにインストールしたいプラグインのリストを書く
-	NeoBundle 'twitvim/twitvim'
-	NeoBundle 'Shougo/unite.vim.git'
-	NeoBundle 'mattn/webapi-vim.git'
-	NeoBundle 'mattn/gist-vim.git'
-	NeoBundle 'koron/nyancat-vim.git'
-	NeoBundle 'mattn/multi-vim'
-	NeoBundle 'mattn/ctrlp-hotentry'
-	NeoBundle 'mattn/ctrlp-google'
-	NeoBundle 'mattn/vim-metarw-etcd'
-	NeoBundle 'mattn/sonictemplate-vim'
-	NeoBundle 'mattn/vim-yomikata'
-	NeoBundle 'fatih/vim-go'
-
-	call neobundle#end()
+"dein Scripts-----------------------------
+if &compatible
+  set nocompatible               " Be iMproved
 endif
 
-filetype plugin on
-filetype indent on
+" Required:
+set runtimepath^=.vim/dein/repos/github.com/Shougo/dein.vim
+
+" Required:
+call dein#begin(expand('.vim/dein'))
+
+" Let dein manage dein
+" Required:
+call dein#add('Shougo/dein.vim')
+
+" Add or remove your plugins here:
+call dein#add('twitvim/twitvim')
+call dein#add('Shougo/unite.vim.git')
+call dein#add('mattn/webapi-vim.git')
+call dein#add('mattn/gist-vim.git')
+call dein#add('koron/nyancat-vim.git')
+call dein#add('mattn/multi-vim')
+call dein#add('mattn/ctrlp-hotentry')
+call dein#add('mattn/ctrlp-google')
+call dein#add('mattn/vim-metarw-etcd')
+call dein#add('mattn/sonictemplate-vim')
+call dein#add('mattn/vim-yomikata')
+call dein#add('fatih/vim-go')
+"call dein#add('Shougo/neosnippet.vim')
+"call dein#add('Shougo/neosnippet-snippets')
+
+" You can specify revision/branch/tag.
+" call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
+
+" Required:
+call dein#end()
+
+" Required:
+filetype plugin indent on
+
+" If you want to install not installed plugins on startup.
+if dein#check_install()
+  call dein#install()
+endif
+
+"End dein Scripts-------------------------
 
 set backspace=indent,eol,start
 "set expandtab
