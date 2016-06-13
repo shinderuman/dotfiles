@@ -47,6 +47,7 @@ call dein#add('mattn/vim-metarw-etcd')
 call dein#add('mattn/sonictemplate-vim')
 call dein#add('mattn/vim-yomikata')
 call dein#add('fatih/vim-go')
+call dein#add('kiteco/plugins')
 "call dein#add('Shougo/neosnippet.vim')
 "call dein#add('Shougo/neosnippet-snippets')
 
