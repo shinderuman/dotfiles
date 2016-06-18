@@ -1,9 +1,11 @@
-[color]
-	ui = auto
 [user]
 	name = shinderuman
 	email = shinderuman@gmail.com
-[core]
-	pager = lv -c
 [github]
 	user = shinderuman
+[pager]
+	log = diff-highlight | less
+	show = diff-highlight | less
+	diff = diff-highlight | less
+[diff]
+	compactionHeuristic = true
