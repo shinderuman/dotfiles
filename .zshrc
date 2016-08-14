@@ -33,3 +33,8 @@ function print_known_hosts () {
 }
 _cache_hosts=($( print_known_hosts ))
 export PATH=$PATH:/usr/local/share/git-core/contrib/diff-highlight
+
+#go lang
+export GOROOT=/usr/local/opt/go/libexec
+export GOPATH=$HOME/gopath
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
