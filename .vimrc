@@ -68,7 +68,7 @@ endif
 "End dein Scripts-------------------------
 
 set backspace=indent,eol,start
-"set expandtab
+set expandtab
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
