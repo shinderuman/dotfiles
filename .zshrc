@@ -14,7 +14,7 @@ zstyle ':vcs_info:*' actionformats '[%s][%F{green}%b%f(%F{red}%a%f)]:'
 # プロンプト表示直前にvcs_info呼び出し
 precmd() { vcs_info }
 # プロンプト表示
-PROMPT='%F{cyan}%m%f:${vcs_info_msg_0_}%c%F{yellow}%# %f'
+PROMPT='%F{magenta}[%n]%F{cyan}%m%f:${vcs_info_msg_0_}%c%F{yellow}%# %f'
 RPROMPT='%T'
 
 RPROMPT="%T"                      # 右側に時間を表示する

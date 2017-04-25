@@ -3,9 +3,5 @@
 	email = shinderuman@gmail.com
 [github]
 	user = shinderuman
-[pager]
-	log = diff-highlight | less
-	show = diff-highlight | less
-	diff = diff-highlight | less
 [diff]
 	compactionHeuristic = true
